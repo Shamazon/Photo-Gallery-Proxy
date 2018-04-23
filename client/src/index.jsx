@@ -2,21 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router-3';
 
-import photoList from './components/App.jsx';
+import Photo from './components/App.jsx';
 
 const App = (props) => {
     const id = Number(props.location.pathname.substr(1));
     return (
-        //Gallery where id={id}
-        <div>Test</div>
+        <Photo id={id} />
     );
 };
 
 ReactDOM.render(
     <Router history={browserHistory}>
-        <Route path='/' component={App}>
+        <Route path='/'>
             <IndexRoute component={App} />
             <Route path='/:id' component={App} />
         </Route>
     </Router>,
-document.getElementById('photoGallery'))
+document.getElementById('photoGallery'));
