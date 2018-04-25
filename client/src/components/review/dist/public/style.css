@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('./fonts/AmazonEmber_Bd.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('./fonts/AmazonEmber_Lt.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('./fonts/AmazonEmber_Rg.ttf');
+  font-weight: normal;
+}
+
+html {
+    font-family: 'AmazonEmber', 'Arial', sans-serif;
+    background-color: rgb(250,250,250);
+    font-size: 13px;
+    line-height: 19px;
+}
+
+/*
+ * Reusable Styles
+ */
+button {
+    background-color: #ededed;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+a {
+    cursor: pointer;
+    color: #0066c0;
+}
+
+a:hover {
+    color: #bc7719;
+}
+
+.a-primary {
+    color: #0066c0;
+}
+
+.a-secondary {
+    color: #767676;
+}
+
+.a-secondary:hover {
+    color: #ac6b13;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+}
+
+.seperator {
+    width: 20px;
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.gray {
+    color: #555;
+}
+
+/*
+ * Index component
+ */
+.app-container {
+    display: grid;
+    grid-template-columns: 651.5px 315.5px;
+}
+
+.main-reviews {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+    margin: 0 5px 0 5px;
+}
+
+.recent-reviews {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+    margin: 0 5px 0 5px;
+}
+
+/*
+ * Star component
+ */
+.star-grid-container {
+    display: grid;
+    grid-template-columns: 185px 485px;
+    margin-top: 10px;
+}
+
+.star-grid-container a:hover {
+    text-decoration: underline;
+}
+
+.star-breakdown {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+}
+
+.star-bar {
+    display: inline-block;
+    width: 75px;
+    height: 12px;
+    margin: 0 4px 0 4px;
+    background: rgb(238,238,238);
+    border-right: 1px solid (248,248,248);
+    border-bottom: 1px solid (248,248,248);
+    border-left: 1px solid rgb(173,177,184);
+    border-top: 1px solid rgb(173,177,184);
+}
+
+.share-review {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+}
+
+.write-review-button {
+    width: 164px;
+    height: 29px;
+    display: block;
+    border-radius: 3px;
+    margin-top: 18px;
+}
+
+.num-reviews {
+    font-size: 17px;
+    line-height: 1.255;
+    margin-left: 5px;
+}
+
+/*
+ * KeywordList component
+ */
+.keyword {
+    background-color: #D7E8EA;
+    padding: 0px 14px;
+    line-height: 29px;
+    margin: 0px 10px 14px 0px;
+    border-bottom: solid 1px #969696;
+    display: inline-block;
+    color: #111111;
+    cursor: pointer;
+}
+
+/*
+ * UserInfo component
+ */
+.user-section {
+    padding: 10px 0 10px 0;
+}
+
+.avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+.user-name {
+    position: relative;
+    word-wrap: break-word
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    /*margin: 20% 0 20% 0;*/
+}
+
+/*
+ * ReviewTitle component
+ */
+.star {
+    height: 15px;
+}
+
+.review-title {
+    color: #111;
+    font-weight: 900; 
+    margin-left: 4px;
+}
+
+/*
+ * ReviewListItem component
+ */
+.verified {
+    color: #c45500;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.465;
+}
+
+.main-review-container {
+    margin-bottom: 22px;
+}
+
+.main-review-container .review-body {
+  max-height: 314px;
+  text-overflow: clip;
+
+  /* Required for text-overflow to do anything */
+  overflow: hidden;
+ }
+
+.helpful button {
+    width: 50px;
+    height: 20px;
+    margin: 0 4px 0 4px;
+    text-align: center;
+    color: #111;
+    font-size: 11px;
+    line-height: 11px;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.helpful h5 {
+    display: inline;
+}
+/*
+ * customerImages Component
+ */
+ .customer-images {
+    margin: 8px 0 8px 0;
+ }
+
+ .customer-images img {
+    margin-right: 5px;
+ }
+
+/* 
+ * RecentReviewListItem Component
+ */
+ .recent-review-container {
+    margin-bottom: 22px;
+ }
+ .recent-reviews .review-body {
+  max-height: 73px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ }

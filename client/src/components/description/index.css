@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'AmazonFont';
+  src: url('./fonts/amazon.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'AmazonFontBold';
+  src: url('./fonts/amazonBold.woff2') format('woff2');
+}
+
+body {
+  margin: 30px;
+  font-size: 25px;
+  font-family: 'AmazonFont', sans-serif;;
+}
+  b {
+    font-family: 'AmazonFontBold', sans-serif;;
+    font-weight: 700;
+  }
+
+.App {
+  font-family: 'AmazonFont', sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+  display:flex;
+  width: 33%;
+}
+
+
+.priceBox {
+  display:flex;
+}
+.col1{
+  padding: 0px 5px 0px 0px;
+}
+.fivepxLeft{
+  padding: 0px 0px 0px 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 0 18px;
+  color: #111;
+}
+
+li::before {
+  content: "•"; 
+  color: #949494;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em}
+
+.App-intro {
+  font-size: 1005px;
+}
+
+a, a:visited, a:active {
+  color: #0066c0;
+}
+
+a:hover {
+  color: darkorange
+}
+
+.icon-star {
+  width: 80px;
+  height: 18px;
+}
+
+
+.astar-05 {
+  background-position: -238px -368px;
+}
+.astar-15 {
+  background-position: -222px -368px;
+}
+.astar-25 {
+  background-position: -205px -368px;
+}
+.astar-35 {
+  background-position: -190px -368px;
+}
+.astar-45 {
+  background-position: -175px -368px;
+}
+
+.astar-00 {
+  background-position: -84px -368px;
+}
+.astar-10 {
+  background-position: -68px -368px;
+}
+.astar-20 {
+  background-position: -52px -368px;
+}
+.astar-30 {
+  background-position: -36px -368px;
+}
+.astar-40 {
+  background-position: -21px -368px;
+}
+.astar-50 {
+  background-position: -6px -368px;
+}
+
+.dropDown {
+  margin: 5px 0 0 .385em;
+  vertical-align: text-top;
+  width: 7px;
+  height: 5px;
+  background-position: -90px -5px;
+  opacity: .6;
+}
+
+.dropDown:hover {
+  opacity: 1
+}
+
+.size-medium {
+  text-rendering: optimizeLegibility;
+  font-size: 17px!important;
+  line-height: 1.255!important;
+}
+
+
+.colorGreen {
+  color: #008a00!important;
+}
+
+.colorGray {
+  color: #555!important
+}
+.colorRed {
+  color:#B12704!important
+}
+.amazon-icon {
+    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    -webkit-background-size: 400px 900px;
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ifItemPrimeImage {
+    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    height: 15px;
+    width: 54px;
+    background-position: -5px -490px;
+    vertical-align: baseline;
+}
+
+.Title {
+  font-size: 21px!important;
+  line-height: 1.3!important;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+
+
+

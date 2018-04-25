@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('../fonts/AmazonEmber_Bd.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('../fonts/AmazonEmber_Lt.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'AmazonEmber';
+  src: url('../fonts/AmazonEmber_Rg.ttf');
+  font-weight: normal;
+}
+
+* {
+    font-family: 'AmazonEmber', 'Arial', sans-serif;
+  }

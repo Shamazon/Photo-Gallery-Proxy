@@ -1,0 +1,241 @@
+* {
+    background-color: rgb(250,250,250);
+    font-size: 13px;
+    line-height: 19px;
+}
+
+/*
+ * Reusable Styles
+ */
+button {
+    background-color: #ededed;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+a {
+    cursor: pointer;
+    color: #0066c0;
+}
+
+a:hover {
+    color: #bc7719;
+}
+
+.aPrimary {
+    color: #0066c0;
+}
+
+.aSecondary {
+    color: #767676;
+}
+
+.aSecondary:hover {
+    color: #ac6b13;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+}
+
+.seperator {
+    width: 20px;
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.gray {
+    color: #555;
+}
+
+/*
+ * Index component
+ */
+.appContainer {
+    display: grid;
+    grid-template-columns: 651.5px 315.5px;
+}
+
+.mainReviews {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+    margin: 0 5px 0 5px;
+}
+
+.recentReviews {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+    margin: 0 5px 0 5px;
+}
+
+/*
+ * Star component
+ */
+.starGridContainer {
+    display: grid;
+    grid-template-columns: 185px 485px;
+    margin-top: 10px;
+}
+
+.starGridContainer a:hover {
+    text-decoration: underline;
+}
+
+.starBreakdown {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+}
+
+.starBar {
+    display: inline-block;
+    width: 75px;
+    height: 12px;
+    margin: 0 4px 0 4px;
+    background: rgb(238,238,238);
+    border-right: 1px solid (248,248,248);
+    border-bottom: 1px solid (248,248,248);
+    border-left: 1px solid rgb(173,177,184);
+    border-top: 1px solid rgb(173,177,184);
+}
+
+.shareReview {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+}
+
+.writeReviewButton {
+    width: 164px;
+    height: 29px;
+    display: block;
+    border-radius: 3px;
+    margin-top: 18px;
+}
+
+.numReviews {
+    font-size: 17px;
+    line-height: 1.255;
+    margin-left: 5px;
+}
+
+/*
+ * KeywordList component
+ */
+.keyword {
+    background-color: #D7E8EA;
+    padding: 0px 14px;
+    line-height: 29px;
+    margin: 0px 10px 14px 0px;
+    border-bottom: solid 1px #969696;
+    display: inline-block;
+    color: #111111;
+    cursor: pointer;
+}
+
+/*
+ * UserInfo component
+ */
+.userSection {
+    padding: 10px 0 10px 0;
+}
+
+.avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+.userName {
+    position: relative;
+    word-wrap: break-word
+}
+
+/*
+ * ReviewTitle component
+ */
+.star {
+    height: 15px;
+}
+
+.reviewTitle {
+    color: #111;
+    font-weight: 900; 
+    margin-left: 4px;
+}
+
+/*
+ * ReviewListItem component
+ */
+.verified {
+    color: #c45500;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.465;
+}
+
+.mainReviewContainer {
+    margin-bottom: 22px;
+}
+
+.mainReviewContainer .reviewBody {
+  max-height: 314px;
+  text-overflow: clip;
+
+  /* Required for text-overflow to do anything */
+  overflow: hidden;
+ }
+
+.helpful button {
+    width: 50px;
+    height: 20px;
+    margin: 0 4px 0 4px;
+    text-align: center;
+    color: #111;
+    font-size: 11px;
+    line-height: 11px;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.helpful h5 {
+    display: inline;
+}
+/*
+ * customerImages Component
+ */
+ .customerImages {
+    margin: 8px 0 8px 0;
+ }
+
+ .customerImages img {
+    margin-right: 5px;
+ }
+
+/* 
+ * RecentReviewListItem Component
+ */
+ .recentReviewContainer {
+    margin-bottom: 22px;
+ }
+ .recentReviews .reviewBody {
+  max-height: 73px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ }

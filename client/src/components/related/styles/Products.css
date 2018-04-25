@@ -1,0 +1,50 @@
+.relatedProducts {
+  display: inline-block;
+  height: 250px;
+  position: relative;
+  width: 98vw;
+}
+
+.inner {
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.goLeft, .goRight {
+  background-color: #eeeeee;
+  border: 1px solid #333333;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+	top: 90px;
+  bottom: 90px;
+  max-height: 50px;
+	width: 3em;
+}
+
+.goRight {
+  right: 0;
+}
+
+.rightArrow {
+  display: inline-block;
+  background: url('/images/AmazonUIBaseCSS-sprites.png') -210px -10px;
+  width:22px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.leftArrow {
+  display: inline-block;
+  background: url('/images/AmazonUIBaseCSS-sprites.png') -245px -12px;
+  width:22px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.goLeft {
+  left: 0;
+}
