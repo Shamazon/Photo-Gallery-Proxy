@@ -144,7 +144,6 @@ class App extends Component {
             averageStars={this.averageStars()}
             totalStars={this.state.data[0]['Total Review Stars']}
           />
-
           <PriceBox stringPrice={this.renderedPrice()} />
           <Stock renderInventory={this.renderedTotalInventory()} />
           <ItemDescription array={this.getArraysAndRender()} />

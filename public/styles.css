@@ -1,8 +1,16 @@
+.banner {
+    width: 100%;
+}
+
+.buysign {
+    width: 275px;
+    margin-left: 1300px;
+    margin-top: -320px;
+}
+
 .photo {
     height: 4em;
     border-radius: 3px;
-    /* padding-left: 1px; */
-    /* padding-right: 1px; */
 }
 
 .photo:hover {
@@ -146,7 +154,6 @@
 }
 
 body {
-    margin: 30px;
     font-size: 25px;
     font-family: 'AmazonFont', sans-serif;;
   }

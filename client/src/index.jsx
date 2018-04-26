@@ -13,6 +13,7 @@ const App = (props) => {
         <div>
             <Photo id={id} />
             <Description id={id} />
+            <img className="buysign" src="https://puu.sh/Aaw7m/c3a6764260.png"/>
             <Related id={id} />
             <Review id={id} />
         </div>
