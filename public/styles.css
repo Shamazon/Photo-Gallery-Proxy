@@ -1,11 +1,68 @@
-.banner {
+.amazonHeader {
+    background-image: url(./amazonImages/shamazonHeader.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: auto;
+    height: 175px;
+    margin: 0 auto;
+    max-height: 100%;
+}
+
+.amazonFooter {
+    background-image: url(./amazonImages/footerImageforShamazon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: auto;
+    height: 1000px;
+    margin: 0 auto;
+    max-height: 0%;
+    padding-top: 200px;
+}
+
+.flexboxWrapper {
+    padding: 0px 0px 0px 30px;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Mine */
+.photoFlexBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/* Tom's */
+.App {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 45px;
+    flex-wrap: nowrap;
+    font-family: 'AmazonFont', sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
     width: 100%;
 }
 
 .buysign {
-    width: 275px;
-    margin-left: 1300px;
-    margin-top: -320px;
+    background-image: url(./amazonImages/buylogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-left: 200px;
+    width: 45%;
+    height: 550px;
 }
 
 .photo {
@@ -20,11 +77,6 @@
 
 .modalContainer {
     display: flex;
-}
-
-.information {
-    /* display: flex; */
-    /* flex-direction: row; */
 }
 
 .modalDivName {
@@ -48,17 +100,22 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 40px;
+    border-radius: 3px;
 }
 
 .modalListContainer {
     display: flex;
 }
 
+.modalStorage {
+    display: flex;
+}
+
 .photo-list {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     float: left;
 }
 
@@ -77,14 +134,11 @@
 }
 
 .main {
-    /* display: inline-flex; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     transition: transform .2s;
-    margin-left: 150px;
-    margin-top: 10px;
-    width: 200px;
+    width: 100%;
 }
 
 .zoom {
@@ -161,18 +215,6 @@ body {
   b {
     font-family: 'AmazonFontBold', sans-serif;;
     font-weight: 700;
-  }
-  
-  .App {
-    font-family: 'AmazonFont', sans-serif;
-    font-size: 13px;
-    line-height: 19px;
-    color: #111;
-    display: flex;
-    justify-content: flex-end;
-    width: 33%;
-    margin-top: -300px;
-    margin-left: 400px;
   }
   
   .priceBox {
@@ -572,3 +614,7 @@ h3 {
   * {
       font-family: 'AmazonEmber', 'Arial', sans-serif;
     }
+
+.review {
+    padding-bottom: 50px;
+}

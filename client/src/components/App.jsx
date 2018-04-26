@@ -82,7 +82,7 @@ class App extends React.Component {
 
     render () {
         return (
-            <div style={{display: 'inline-flex'}}>
+            <div className="photoFlexBox">
                 <div className="main">
                     <div>
                         <Photolist hoverPicture={this.hoverPicture} photos={this.state.photoArray}/>
@@ -109,16 +109,19 @@ class App extends React.Component {
                     <br></br>
                     <br></br>
                     <div className="modalContainer">
-                        <img className="modalPic" src={this.state.photo}/>
+
+                        <div className="modalStorage">
+                            <img className="modalPic" src={this.state.photo}/>
                         
-                        <div className="information">
-                            <br></br>
-                            <div className="modalDivName">Name: {this.state.name}</div>
-                            <br></br>
-                            <div className="modalDivDescription">Description: {this.state.description}</div>
-                            <br></br>
-                            <div className="modalListContainer">
-                                <Photolist clickPicture={this.clickPicture} photos={this.state.photoArray}/>
+                            <div className="information">
+                                <br></br>
+                                <div className="modalDivName">Name: {this.state.name}</div>
+                                <br></br>
+                                <div className="modalDivDescription">Description: {this.state.description}</div>
+                                <br></br>
+                                <div className="modalListContainer">
+                                    <Photolist clickPicture={this.clickPicture} photos={this.state.photoArray}/>
+                                </div>
                             </div>
                         </div>
                     </div>

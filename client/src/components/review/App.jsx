@@ -44,7 +44,7 @@ class App extends React.Component {
             <div className="recentReviews">
                 <RecentReviewList reviews={this.state.reviews.recent} />
             </div>
-            <div>
+            <div className="review">
               <a className="underline">See all {this.state.reviews.count} customer reviews</a>
               <button className="writeReviewButton">Write a Customer Review</button>
             </div>

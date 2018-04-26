@@ -11,11 +11,15 @@ const App = (props) => {
     const id = Number(props.location.pathname.substr(1));
     return (
         <div>
-            <Photo id={id} />
-            <Description id={id} />
-            <img className="buysign" src="https://puu.sh/Aaw7m/c3a6764260.png"/>
+            <div className="amazonHeader"/>
+            <div className="flexboxWrapper">
+                <Photo id={id} />
+                <Description id={id} />
+                <div className="buysign"/>
+            </div>
             <Related id={id} />
             <Review id={id} />
+            <div className="amazonFooter"/>
         </div>
     );
 };
