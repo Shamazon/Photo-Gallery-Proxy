@@ -69,14 +69,14 @@
 }
 
 .main {
+    /* display: inline-flex; */
     display: flex;
-    justify-content: center;
-    padding: 25px;
+    justify-content: flex-end;
+    align-items: flex-start;
     transition: transform .2s;
-    height: 200px;
+    margin-left: 150px;
+    margin-top: 10px;
     width: 200px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .zoom {
@@ -97,6 +97,7 @@
 
 .shamazon {
     height: 3em;
+    margin-top: -10px;
 }
 
 .perimeter {
@@ -130,3 +131,437 @@
       flex: 0 0 33.5%;
     }
   }
+
+/* Tom's CSS */
+
+
+@font-face {
+  font-family: 'AmazonFont';
+  src: url('./fonts/amazon.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'AmazonFontBold';
+  src: url('./fonts/amazonBold.woff2') format('woff2');
+}
+
+body {
+    margin: 30px;
+    font-size: 25px;
+    font-family: 'AmazonFont', sans-serif;;
+  }
+  
+  b {
+    font-family: 'AmazonFontBold', sans-serif;;
+    font-weight: 700;
+  }
+  
+  .App {
+    font-family: 'AmazonFont', sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #111;
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+    margin-top: -300px;
+    margin-left: 400px;
+  }
+  
+  .priceBox {
+    display:flex;
+  }
+  .col1{
+    padding: 0px 5px 0px 0px;
+  }
+  .fivepxLeft{
+    padding: 0px 0px 0px 15px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0 0 0 18px;
+    color: #111;
+  }
+  
+  li::before {
+    content: "•"; 
+    color: #949494;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em}
+  
+  .App-intro {
+    font-size: 1005px;
+  }
+  
+  a, a:visited, a:active {
+    color: #0066c0;
+  }
+  
+  a:hover {
+    color: darkorange
+  }
+  
+  .icon-star {
+    width: 80px;
+    height: 18px;
+  }
+  
+  
+  .astar-05 {
+    background-position: -238px -368px;
+  }
+  .astar-15 {
+    background-position: -222px -368px;
+  }
+  .astar-25 {
+    background-position: -205px -368px;
+  }
+  .astar-35 {
+    background-position: -190px -368px;
+  }
+  .astar-45 {
+    background-position: -175px -368px;
+  }
+  
+  .astar-00 {
+    background-position: -84px -368px;
+  }
+  .astar-10 {
+    background-position: -68px -368px;
+  }
+  .astar-20 {
+    background-position: -52px -368px;
+  }
+  .astar-30 {
+    background-position: -36px -368px;
+  }
+  .astar-40 {
+    background-position: -21px -368px;
+  }
+  .astar-50 {
+    background-position: -6px -368px;
+  }
+  
+  .dropDown {
+    margin: 5px 0 0 .385em;
+    vertical-align: text-top;
+    width: 7px;
+    height: 5px;
+    background-position: -90px -5px;
+    opacity: .6;
+  }
+  
+  .dropDown:hover {
+    opacity: 1
+  }
+  
+  .size-medium {
+    text-rendering: optimizeLegibility;
+    font-size: 17px!important;
+    line-height: 1.255!important;
+  }
+  
+  .colorGreen {
+    color: #008a00!important;
+  }
+  
+  .colorGray {
+    color: #555!important
+  }
+  .colorRed {
+    color:#B12704!important
+  }
+  
+  .Title {
+    font-size: 21px!important;
+    line-height: 1.3!important;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
+
+  .amazon-icon {
+    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    -webkit-background-size: 400px 900px;
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ifItemPrimeImage {
+    background-image: url(./Images-To-Redis/ShamazonIcons.png);
+    height: 15px;
+    width: 54px;
+    background-position: -5px -490px;
+    vertical-align: baseline;
+}
+  
+  
+  
+  /* Mike's CSS*/
+
+  * {
+    background-color: rgb(250,250,250);
+    font-size: 13px;
+    line-height: 19px;
+}
+
+/*
+ * Reusable Styles
+ */
+button {
+    background-color: #ededed;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+a {
+    cursor: pointer;
+    color: #0066c0;
+}
+
+a:hover {
+    color: #bc7719;
+}
+
+.aPrimary {
+    color: #0066c0;
+}
+
+.aSecondary {
+    color: #767676;
+}
+
+.aSecondary:hover {
+    color: #ac6b13;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+}
+
+.seperator {
+    width: 20px;
+    color: #ddd;
+    display: inline-block;
+    text-align: center;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.gray {
+    color: #555;
+}
+
+/*
+ * Index component
+ */
+.appContainer {
+    display: grid;
+    /* grid-template-columns: 651.5px 315.5px; */
+}
+
+.mainReviews {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+    margin: 0 5px 0 5px;
+}
+
+.recentReviews {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+    margin: 0 5px 0 5px;
+}
+
+/*
+ * Star component
+ */
+.starGridContainer {
+    display: grid;
+    grid-template-columns: 185px 485px;
+    margin-top: 10px;
+}
+
+.starGridContainer a:hover {
+    text-decoration: underline;
+}
+
+.starBreakdown {
+    grid-column-start: 1; 
+    grid-column-end: 1;
+}
+
+.starBar {
+    display: inline-block;
+    width: 75px;
+    height: 12px;
+    margin: 0 4px 0 4px;
+    background: rgb(238,238,238);
+    border-right: 1px solid (248,248,248);
+    border-bottom: 1px solid (248,248,248);
+    border-left: 1px solid rgb(173,177,184);
+    border-top: 1px solid rgb(173,177,184);
+}
+
+.shareReview {
+    grid-column-start: 2; 
+    grid-column-end: 2;
+}
+
+.writeReviewButton {
+    width: 164px;
+    height: 29px;
+    display: block;
+    border-radius: 3px;
+    margin-top: 18px;
+}
+
+.numReviews {
+    font-size: 17px;
+    line-height: 1.255;
+    margin-left: 5px;
+}
+
+/*
+ * KeywordList component
+ */
+.keyword {
+    background-color: #D7E8EA;
+    padding: 0px 14px;
+    line-height: 29px;
+    margin: 0px 10px 14px 0px;
+    border-bottom: solid 1px #969696;
+    display: inline-block;
+    color: #111111;
+    cursor: pointer;
+}
+
+/*
+ * UserInfo component
+ */
+.userSection {
+    padding: 10px 0 10px 0;
+}
+
+.avatar {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+}
+
+.userName {
+    position: relative;
+    word-wrap: break-word
+}
+
+/*
+ * ReviewTitle component
+ */
+.star {
+    height: 15px;
+}
+
+.reviewTitle {
+    color: #111;
+    font-weight: 900; 
+    margin-left: 4px;
+}
+
+/*
+ * ReviewListItem component
+ */
+.verified {
+    color: #c45500;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.465;
+}
+
+.mainReviewContainer {
+    margin-bottom: 22px;
+}
+
+.mainReviewContainer .reviewBody {
+  max-height: 314px;
+  text-overflow: clip;
+
+  /* Required for text-overflow to do anything */
+  overflow: hidden;
+ }
+
+.helpful button {
+    width: 50px;
+    height: 20px;
+    margin: 0 4px 0 4px;
+    text-align: center;
+    color: #111;
+    font-size: 11px;
+    line-height: 11px;
+    border-radius: 3px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.helpful h5 {
+    display: inline;
+}
+/*
+ * customerImages Component
+ */
+ .customerImages {
+    margin: 8px 0 8px 0;
+ }
+
+ .customerImages img {
+    margin-right: 5px;
+ }
+
+/* 
+ * RecentReviewListItem Component
+ */
+ .recentReviewContainer {
+    margin-bottom: 22px;
+ }
+ .recentReviews .reviewBody {
+  max-height: 73px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ }
+
+ @font-face {
+    font-family: 'AmazonEmber';
+    src: url('../fonts/AmazonEmber_Bd.ttf');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: 'AmazonEmber';
+    src: url('../fonts/AmazonEmber_Lt.ttf');
+    font-weight: lighter;
+  }
+  
+  @font-face {
+    font-family: 'AmazonEmber';
+    src: url('../fonts/AmazonEmber_Rg.ttf');
+    font-weight: normal;
+  }
+  
+  * {
+      font-family: 'AmazonEmber', 'Arial', sans-serif;
+    }

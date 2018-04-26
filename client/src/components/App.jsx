@@ -29,7 +29,6 @@ class App extends React.Component {
     handlePhotos (id) {
         axios.get(`http://localhost:1337/products/${id}/photos`)
         .then((res) => {
-            console.log('HandlePhotos Axios GET Success', res.data);
             this.setState({
                 photoArray: res.data.imageUrls,
                 photo: res.data.imageUrls[0],
@@ -43,7 +42,6 @@ class App extends React.Component {
     }
 
     componentDidMount () {
-        // let id = window.location.href.split('/').pop().substring(4) || '1';
         const id = this.props.id || 0;
         this.handlePhotos(id);
     }
@@ -84,7 +82,7 @@ class App extends React.Component {
 
     render () {
         return (
-            <div>
+            <div style={{display: 'inline-flex'}}>
                 <div className="main">
                     <div>
                         <Photolist hoverPicture={this.hoverPicture} photos={this.state.photoArray}/>
@@ -114,6 +112,7 @@ class App extends React.Component {
                         <img className="modalPic" src={this.state.photo}/>
                         
                         <div className="information">
+                            <br></br>
                             <div className="modalDivName">Name: {this.state.name}</div>
                             <br></br>
                             <div className="modalDivDescription">Description: {this.state.description}</div>

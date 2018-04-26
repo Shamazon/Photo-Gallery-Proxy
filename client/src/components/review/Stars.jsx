@@ -5,7 +5,7 @@ const Stars = (props) => {
     let stars = [];
     var numStars = [60, 10, 5, 5, 20];
     for(var i = 0; i < 5; i++){
-        stars.push(<img className={style.star} src='./img/fullstar.png' />)
+        stars.push(<img className={style.star} key={i} src='./img/fullstar.png' />)
     }
 
    return (
@@ -46,3 +46,4 @@ const Stars = (props) => {
 }
 
 export default Stars;
+

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import style from './dist/style/style.css';
 
 var CustomerImages = (props) => {
     return (

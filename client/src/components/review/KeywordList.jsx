@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './dist/style/style.css';
 
 const KeywordList = (props) => {
     
@@ -15,9 +16,9 @@ const KeywordList = (props) => {
     return (
         <section>
             <h3>Read reviews that mention</h3>
-                {keywords.map((row, rIndex) => 
-                    <div>
-                        {row.map((word, index) => <span className={style.keyword}>{word}</span>)}
+                {keywords.map((row, i) => 
+                    <div key={i}>
+                        {row.map((word, i) => <span className={style.keyword} key={i}>{word}</span>)}
                     </div>)}
         </section>
     )

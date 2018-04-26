@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './dist/style/style.css'
+import style from './dist/style/style.css';
 
 var UserInfo = (props) => {
     var gender = Math.random() > 0.5 ? "men" : "women";

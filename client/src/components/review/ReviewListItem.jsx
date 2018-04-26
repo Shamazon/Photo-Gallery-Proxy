@@ -1,8 +1,8 @@
 import React from 'react';
 import UserInfo from './UserInfo.jsx';
 import ReviewTitle from './ReviewTitle.jsx';
-import ReviewBody from './ReviewBody.jsx'
-import style from './dist/style/style.css'
+import ReviewBody from './ReviewBody.jsx';
+import style from './dist/style/style.css';
 
 var ReviewListItem = (props) => {
     return (

@@ -6,16 +6,14 @@ import Photo from './components/App.jsx';
 import Related from './components/related/App.jsx';
 import Description from './components/description/App';
 import Review from './components/review/App.jsx';
-// import './components/description/fonts';
-// import './components/description/index.css';
 
 const App = (props) => {
     const id = Number(props.location.pathname.substr(1));
     return (
         <div>
             <Photo id={id} />
-            <Related id={id} />
             <Description id={id} />
+            <Related id={id} />
             <Review id={id} />
         </div>
     );

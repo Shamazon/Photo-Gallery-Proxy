@@ -7,7 +7,7 @@ import CustomerReviews from './customerReviews';
 import PriceBox from './PriceBox';
 import Stock from './Stock';
 import ItemDescription from './ItemDescription';
-// import './index.css';
+import './index.css';
 
 class App extends Component {
   constructor(props) {
@@ -45,6 +45,14 @@ class App extends Component {
   }
 
   componentWillMount() {
+    this.getnew();
+  }
+ 
+  componentWillReceiveProps() {
+    this.getnew();
+  }
+ 
+  getnew() {
     this.serverRequest = axios.get(`http://localhost:4000/products/${this.props.id}`).then((res) => {
       this.setState({
         data: res.data,
@@ -53,7 +61,6 @@ class App extends Component {
       throw err;
     });
   }
-
 
   getArraysAndRender() {
     const array = [];

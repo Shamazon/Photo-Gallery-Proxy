@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import style from './dist/style/style.css'
 import Stars from './Stars.jsx';
 import RecentReviewList from './RecentReviewList.jsx';
 import ReviewList from './ReviewList.jsx';
 import KeywordList from './KeywordList.jsx';
-
+import axios from 'axios';
+import './dist/style/style.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,44 +22,36 @@ class App extends React.Component {
     this.getReviews();
   }
 
-  getReviews () {
-    let product = this.props.product ? this.props.product : 0; 
-    $.ajax({
-      method: 'GET',
-      url: `/reviews/${product}`,
-      dataType: 'json',
-      success: (data, status) => {
-        if(status === 'success') {
-          this.setState({reviews: data});
-        } else {
-          this.setState({reviews: {recent: [], top: [], count: []}});
-        }
-      }
-    })
+  getReviews() {
+    const product = this.props.product ? this.props.product : 0;
+    axios.get(`http://localhost:3005/reviews/${product}`).then((res) => {
+      this.setState({ reviews: res.data });
+    }).catch((err) => {
+      this.setState({ reviews: { recent: [], top: [], count: [] } });
+      throw err;
+    });
   }
 
   render() {
     return (
-        <div className={style.appContainer}>
+        <div className="appContainer">
             <h2>Customer Reviews</h2>
-            <div className={style.mainReviews}>
+            <div className="mainReviews">
                 <Stars numReviews={this.state.reviews.count}/>
                 <KeywordList />
                 <ReviewList reviews={this.state.reviews.top} />
             </div>
-            <div className={style.recentReviews}>
+            <div className="recentReviews">
                 <RecentReviewList reviews={this.state.reviews.recent} />
             </div>
             <div>
-              <a className={style.underline}>See all {this.state.reviews.count} customer reviews</a>
-              <button className={style.writeReviewButton}>Write a Customer Review</button>
+              <a className="underline">See all {this.state.reviews.count} customer reviews</a>
+              <button className="writeReviewButton">Write a Customer Review</button>
             </div>
         </div>
 
     )   
   }
 }
-
-// ReactDOM.render(React.createElement(App), document.getElementById('app'));
 
 export default App;
