@@ -45,6 +45,7 @@ class App extends Component {
   }
 
   componentWillMount() {
+    const id = this.props.id || 0;
     this.getnew();
   }
  
@@ -54,10 +55,12 @@ class App extends Component {
  
   getnew() {
     this.serverRequest = axios.get(`http://localhost:4000/products/${this.props.id}`).then((res) => {
+      console.log('Tom stuff work');
       this.setState({
         data: res.data,
       });
     }).catch((err) => {
+      console.log('Tom stuff no work');
       throw err;
     });
   }
