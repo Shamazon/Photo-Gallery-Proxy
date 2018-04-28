@@ -24,7 +24,7 @@ class App extends React.Component {
 
   getReviews() {
     const product = this.props.product ? this.props.product : 0;
-    axios.get(`http://localhost:3005/reviews/${product}`).then((res) => {
+    axios.get(`http://52.43.195.69/reviews/${product}`).then((res) => {
       this.setState({ reviews: res.data });
     }).catch((err) => {
       this.setState({ reviews: { recent: [], top: [], count: [] } });

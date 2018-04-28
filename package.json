@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js && node ./Related-Items-Server/server/index.js && node ./Review-Server/server/index.js && node ./Description-Server/server/server.js",
-    "start1": "node server.js",
-    "build": "webpack -d --watch"
+    "start1": "node server.js && node ./Related-Items-Server/server/index.js && node ./Review-Server/server/index.js && node ./Description-Server/server/server.js",
+    "start": "node server.js",
+    "build": "webpack -p",
+    "docker": "npm run build & npm start"
   },
   "repository": {
     "type": "git",

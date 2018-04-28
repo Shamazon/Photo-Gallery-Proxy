@@ -28,7 +28,7 @@ export default class App extends React.Component {
 
   setRelatedProducts(productId) {
     if (productId !== this.state.loadedProductsId) {
-      axios.get(`http://localhost:9001/products/${productId}/related`)
+      axios.get(`http://34.215.160.52:9001/products/${productId}/related`)
       .then((data) => {
         const products = data.data;
         this.setState({ products, loadedProductsId: productId });

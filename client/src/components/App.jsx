@@ -27,7 +27,7 @@ class App extends React.Component {
     }
 
     handlePhotos (id) {
-        axios.get(`http://localhost:1337/products/${id}/photos`)
+        axios.get(`http://52.91.248.43/products/${id}/photos`)
         .then((res) => {
             this.setState({
                 photoArray: res.data.imageUrls,

@@ -10,4 +10,4 @@ RUN npm install
 
 EXPOSE 1338
 
-CMD [ "npm", "run", "start1" ]
+CMD [ "npm", "run", "docker" ]
