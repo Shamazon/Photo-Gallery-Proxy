@@ -55,12 +55,10 @@ class App extends Component {
  
   getnew() {
     this.serverRequest = axios.get(`http://52.14.248.199:4000/products/${this.props.id}`).then((res) => {
-      console.log('Tom stuff work');
       this.setState({
         data: res.data,
       });
     }).catch((err) => {
-      console.log('Tom stuff no work');
       throw err;
     });
   }

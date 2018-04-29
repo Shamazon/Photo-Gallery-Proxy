@@ -8,6 +8,8 @@
     "start1": "node server.js && node ./Related-Items-Server/server/index.js && node ./Review-Server/server/index.js && node ./Description-Server/server/server.js",
     "start": "node server.js",
     "build": "webpack -p",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
     "docker": "npm run build & npm start"
   },
   "repository": {
@@ -47,6 +49,11 @@
     "jquery": "^3.3.1",
     "nodemon": "^1.14.12",
     "request": "^2.85.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
   }
 }
