@@ -1,3 +1,10 @@
 **/bundle.js
 /webpack.config.js
 **/node_modules
+/Description-Server
+/Related-Items-Server
+/Review-Server
+/client/src/components/description
+/client/src/components/related
+/client/src/components/review
+
