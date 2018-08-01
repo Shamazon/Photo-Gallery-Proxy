@@ -1,10 +1,10 @@
 # Shamazon
 
-> Proxy server of Amazon inspired product page web application microservice
+Proxy server of Amazon inspired product page web application microservice with all components. 
 
 https://youtu.be/9-IfeI7_-J4
 
-Tech stack: JavaScript, React.js, Express.js, MongoDB, Jest, Enzyme, AWS EC2, Docker
+> Tech stack: JavaScript, React.js, Express.js, MongoDB, Jest, Enzyme, AWS EC2, Docker
 
 ## Related Projects
 
